@@ -102,10 +102,10 @@ add_library(${PROJECT_NAME}
     src/protocol_v1/agilex_msg_parser_v1.c
 )
 target_link_libraries(${PROJECT_NAME} PUBLIC Threads::Threads)
-target_compile_definitions(${PROJECT_NAME} PUBLIC ASIO_ENABLE_OLD_SERVICES)
+#target_compile_definitions(${PROJECT_NAME} PUBLIC ASIO_ENABLE_OLD_SERVICES)
 target_include_directories(${PROJECT_NAME} PUBLIC
 	$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:include/ugv_sdk/details/asio/include>
+    #$<INSTALL_INTERFACE:include/ugv_sdk/details/asio/include>
     $<INSTALL_INTERFACE:include>
     PRIVATE src)
     
