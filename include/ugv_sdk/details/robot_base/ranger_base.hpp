@@ -56,6 +56,7 @@ class RangerBase : public AgilexBase<ProtocolV2Parser>, public RangerInterface {
     ranger_state.time_stamp = state.time_stamp;
     ranger_state.system_state = state.system_state;
     ranger_state.motion_state = state.motion_state;
+    ranger_state.current_motion_mode = state.motion_mode_state;
     ranger_state.light_state = state.light_state;
     ranger_state.rc_state = state.rc_state;
     return ranger_state;

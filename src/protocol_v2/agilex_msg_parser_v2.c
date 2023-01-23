@@ -193,7 +193,6 @@ bool DecodeCanFrameV2(const struct can_frame *rx_frame, AgxMessage *msg) {
     case CAN_MSG_CURRENT_CTRL_MODE: {
       msg->type = AgxMsgMotionModeState;
       MotionModeStateFrame *frame = (MotionModeStateFrame *)(rx_frame->data);
-
       msg->body.motion_mode_state_msg.motion_mode = frame->motion_mode;
       msg->body.motion_mode_state_msg.mode_changing = frame->mode_changing;
       break;

@@ -233,8 +233,7 @@ class AgilexBase : public RobotCommonInterface {
       case AgxMsgMotionModeState: {
         // std::cout << "motion mode feedback received" << std::endl;
         core_state_msgs_.time_stamp = AgxMsgRefClock::now();
-        core_state_msgs_.motion_mode_state =
-            status_msg.body.motion_mode_state_msg;
+        core_state_msgs_.motion_mode_state = status_msg.body.motion_mode_state_msg;
         break;
       }
       case AgxMsgRcState: {
