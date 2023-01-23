@@ -15,7 +15,7 @@
 
 #include "ugv_sdk/details/interface/agilex_message.h"
 #include "ugv_sdk/details/interface/parser_interface.hpp"
-
+#include <stdexcept>
 #define AGX_MAX_ACTUATOR_NUM 8
 
 namespace westonrobot {
