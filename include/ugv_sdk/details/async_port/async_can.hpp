@@ -17,7 +17,6 @@
 #include <linux/can.h>
 
 #include <memory>
-
 #include "asio/posix/basic_stream_descriptor.hpp"
 
 #include "ugv_sdk/details/async_port/async_port_base.hpp"

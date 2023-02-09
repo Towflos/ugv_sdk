@@ -15,7 +15,6 @@
 #include <unistd.h>
 #include <sys/ioctl.h>
 #include <linux/can.h>
-
 #include <iostream>
 
 namespace westonrobot {
